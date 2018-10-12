@@ -2,4 +2,6 @@
 button,label{
   margin-top: 10px;
 }
-
+.backgroundTela{
+background-image: url(../paper.jpg);
+}

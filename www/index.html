@@ -1,93 +1,38 @@
 <!DOCTYPE HTML>
-<html>
+<html >
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <script src="components/jquery-3.3.1.min.js"></script>
-    <script src="components/calcular.js"></script>
+    <script src="components/banco.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
+
+$(document).ready(function(){
+    $('.navbar-xbootstrap').click(function(){
+      $('.nav-xbootstrap').toggleClass('visible');
+      $('body').toggleClass('cover-bg');
+    });
+  });
     </script>
+
 </head>
-    <div class="container">
-        <div class="row">
+<body  class="backgroundTela">
+	<div class="bs-example">
+    <div class="btn-group dropup">
       <div class="col-xs-12">
-        <div class"jumbotron">
-          <h1>Clauculadora Básica</h1>
-        </div>
-      </div>
-    </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <input type="number" id="result" class="form-control" readonly>
-            </div>
-        </div>
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="sete" class="btn btn-success btn-block">7</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="oito" class="btn btn-success btn-block">8</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="nove" class="btn btn-success btn-block">9</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="somar" class="btn btn-success btn-block">+</button>
-            </div>
-        </div>
-        
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="quatro" class="btn btn-success btn-block">4</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="cinco" class="btn btn-success btn-block">5</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="seis" class="btn btn-success btn-block">6</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="sub" class="btn btn-success btn-block">-</button>
-            </div>
-        </div>
-        
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="um" class="btn btn-success btn-block">1</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="dois" class="btn btn-success btn-block">2</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="tres" class="btn btn-success btn-block">3</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="divd" class="btn btn-success btn-block">/</button>
-            </div>
-        </div>
-        
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="zero" class="btn btn-success btn-block">0</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="ponto" class="btn btn-success btn-block">.</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="igual" class="btn btn-success btn-block">=</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="mult" class="btn btn-success btn-block">*</button>
-            </div>
+        <button type="button" class="btn btn-primary btn-lg" id="btnCadastro">Cadastrar Veiculo</button>
+        <button type="button" class="btn btn-primary btn-lg" id="btnLista">Listar/Editar</button>
         </div>
     </div>
+</div>
+
 </body>
 </html>
-
-
-
