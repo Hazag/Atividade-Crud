@@ -7,17 +7,27 @@
     <script src="components/loader.js"></script>
     <script src="components/jquery-3.3.1.min.js"></script>
     <script src="components/banco.js"></script>
+    <script src="components/coisa.js"></script>
+    <script src="components/1coisa.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    
+
+    <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Atividade Crud</a>
+  <a href="cadastro.html">Cadastrar Veiculo</a>
+  <a href="lista.html">Listar/Editar</a> 
+  <a href="index.html">Sair</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="menu3.png" /></a>
+</div>
 </head>
 <body class="backgroundTela">
 	<div class="container ">
     <div class="row">
         <div class="col-xs-12">
-            <h1> Sistema de login </h1>
+            <h1> Cadastro de veiculos </h1>
         </div>
 	  </div>
     
@@ -52,8 +62,20 @@
         </div>
 	  </div>
     <div class="row">
+        <div class="col-xs-12 "align="center">
+           <label class="btn btn-primary" for="my-file-selector">
+    <input id="my-file-selector" type="file" style="display:none" 
+    onchange="$('#upload-file-info').html(this.files[0].name)">
+    Imagem do Veiculo
+</label>
+
+<span class='label label-info' id="upload-file-info"></span>
+<button class="btn btn-primary" id="my-file-selector" onclick="getImage()">Tirar foto</button>
+        </div>
+	  </div>
+    <div class="row">
         <div class="col-xs-12">
-            <button class="btn btn-primary btn-lg btn-block" id="btnEnviar"> Cadastrar </button>
+            <button class="btn btn-primary btn-lg btn-block" id="btnCadastrar"> Cadastrar </button>
             
         </div>
 	  </div>
